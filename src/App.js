@@ -22,9 +22,13 @@ function Board({xIsNext, squares, onPlay}) {
   }
 
   const winner = calculateWinner(squares);
+  const tie = calculateTie(squares)
   let status;
   if (winner) {
     status = "Winner: " + winner;
+  }
+  else if (tie){
+    status = "It's a tie!"
   }
   else {
     status = "Next player: " + (xIsNext ? 'X' : 'O');
@@ -112,4 +116,13 @@ function calculateWinner(squares) {
     }
   }
   return null;
+}
+
+function calculateTie(squares){
+  for (let i = 0; i < 9; i++) {
+    if (!squares[i]) {
+      return null;
+    }
+  }
+  return true;
 }

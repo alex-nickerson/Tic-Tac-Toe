@@ -100,7 +100,7 @@ li{
   padding: 100px;
   text-align: center;
   width: 34px;
-  text-indent: -25px; /* contols horizonal value of text */
+  text-indent: -27px; /* contols horizonal value of text */
 }
 
 .board-row:after {
@@ -112,6 +112,7 @@ li{
 .status {
   margin-bottom: 10px;
   color: white;
+  font-size: 20px;
 }
 
 .game {
