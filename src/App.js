@@ -77,13 +77,24 @@ export default function Game() {
     if (move > 0) {
       description = '> Move #' + move;
     } else {
-      description = '> Game Start';
+      description = 'Game Start';
     }
+    if (move < 5){
     return (
-      <li key={move}>
-        <button className="moveHistory" onClick={() => jumpTo(move)}>{description}</button>
-      </li>
-    );
+      <div className="listContainer">
+        <li key={move}>
+          <button className="moveHistory" onClick={() => jumpTo(move)}>{description}</button>
+        </li>
+      </div>
+    );}
+    else {
+      return (
+        <div className="listContainerTwo">
+          <li key={move}>
+            <button className="moveHistory" onClick={() => jumpTo(move)}>{description}</button>
+          </li>
+        </div>
+    );}
   });
 
   return (
