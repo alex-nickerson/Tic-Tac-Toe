@@ -1,0 +1,25 @@
+@media screen and (max-width: 1500px) {
+
+    .square{
+        padding: 30px;
+        font-size: 40px;
+        text-indent: -15px;
+    }
+
+    .gameContainer{
+        margin-left: 100px;
+    }
+
+    .title, .created{
+        width:400px;
+    }
+
+    .game{
+        flex-direction: column;
+    }
+
+    .moveHistory{
+        margin-left: -25vw;
+    }
+
+}

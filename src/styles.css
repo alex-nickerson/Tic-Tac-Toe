@@ -57,6 +57,7 @@ li{
 }
 
 .title{
+  margin-top: 10px;
   display: flex;
   justify-content: center;
   color: #B9D6F2;
@@ -81,7 +82,7 @@ li{
 
 .listContainerTwo{
   margin-left: 140px;
-  transform: translateY(-397px);
+  transform: translateY(-396px);
 }
 
 .gameContainer{
